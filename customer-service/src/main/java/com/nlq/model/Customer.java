@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Table(name = "customer")
-public class Customer {
+public class Customer extends AuditModel{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -21,4 +21,6 @@ public class Customer {
         this.id = id;
         this.name = name;
     }
+
+    public Customer(){};
 }
