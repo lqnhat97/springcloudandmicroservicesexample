@@ -2,6 +2,9 @@ server:
   port: 8062
 
 eureka:
+  instance:
+    hostname: localhost
+    port: 6061
   client:
     serviceUrl:
-      defaultZone: http://localhost:8061/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/

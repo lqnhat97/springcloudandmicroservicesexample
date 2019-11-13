@@ -30,12 +30,26 @@
                 <version>1.18.10</version>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>com.querydsl</groupId>
+                <artifactId>querydsl-apt</artifactId>
+                <version>4.2.1</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.querydsl</groupId>
+                <artifactId>querydsl-jpa</artifactId>
+                <version>4.2.1</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <modules>
         <module>config-service</module>
-        <module>discovery-service</module>
         <module>customer-service</module>
+        <module>order-service</module>
+        <module>gateway</module>
+        <module>discovery-service</module>
     </modules>
 </project>
